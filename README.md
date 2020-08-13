@@ -41,3 +41,9 @@ Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://deve
     pdf_use_skia = false
     symbol_level = 1
  
+## ChangeLog
+  #### v0.0.1
+   * Initialize library
+   * Provide pdfium library 
+   * Write PdfRendererCompat java class wrapper that similar to android builtin PdfRenderer
+    
