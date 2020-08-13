@@ -3,13 +3,15 @@ Compatible [ android.graphics.pdf.PdfRenderer ]( https://developer.android.com/r
 
 ## Usage
  * Use PdfRenderer in API level under 19
- * Render on Bitmap with format RBG565
+ * Pdf Page render on Bitmap with format RBG565
  * Use Pdfium library in native develop quickly instead of compile it complexly 
 
 ## Get Started
   #### Simple Usage For PdfRenderer Compat
+    package current available in jcenter:
     implementation "com.ober.opdf:pdfium_compat:0.0.1"
     
+    use in java:
     PdfRendererCompat pdfRenderer = new PdfRendererCompat(parcelFileDescriptor);
     //then pdfRenderer perform every function similar to android.graphics.pdf.PdfRenderer
   
