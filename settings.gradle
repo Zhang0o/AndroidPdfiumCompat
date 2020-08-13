@@ -1,0 +1,3 @@
+include ':pdfium_compat'
+include ':app'
+rootProject.name = "AndroidPdfiumCompat"

@@ -1,0 +1,1 @@
+-keep class com.ober.opd.pdfium.PdfRendererCompat {*;}
