@@ -1,5 +1,5 @@
 # PdfiumCompat
-Compatible [ android.graphics.pdf.PdfRenderer ]( https://developer.android.com/reference/android/graphics/pdf/PdfRenderer ) for android API level under 19 and more extension.
+Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://developer.android.com/reference/android/graphics/pdf/PdfRenderer ) that support API level under 19. And some extension functions is supplied.
 
 ## Usage
  * Use PdfRenderer in API level under 19
