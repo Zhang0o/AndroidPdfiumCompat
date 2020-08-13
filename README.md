@@ -17,6 +17,9 @@ Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://deve
   
   Demo app show the simple usage of PdfRendererCompat and PdfRenderer
   
+  <img src="https://github.com/Zhang0o/AndroidPdfiumCompat/blob/master/demo_screenshot.png" width="250"/>
+  
+  
   #### Advance Usage
     * clone source code
     * get so libraries in cpp/jniLibs
