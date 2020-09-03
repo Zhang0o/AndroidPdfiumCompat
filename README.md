@@ -21,10 +21,10 @@ Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://deve
   
   
   #### Advance Usage
-    * clone source code
-    * get so libraries in cpp/jniLibs
-    * get pdfium header files in cpp/public/
-    * integrate them into user own project
+    1. clone source code
+    2. get so libraries in cpp/jniLibs
+    3. get pdfium header files in cpp/public/
+    4. integrate them into user own project
 
 ## native libraries source
 
