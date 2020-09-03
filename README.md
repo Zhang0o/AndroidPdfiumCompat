@@ -9,7 +9,7 @@ Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://deve
 ## Get Started
   #### Simple Usage For PdfRenderer Compat
     package current available in jcenter:
-    implementation "com.ober.opdf:pdfium_compat:0.0.1"
+    implementation "com.ober.opdf:pdfium_compat:0.1.0"
     
     use in java:
     PdfRendererCompat pdfRenderer = new PdfRendererCompat(parcelFileDescriptor);
@@ -51,4 +51,5 @@ Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://deve
    * Initialize library
    * Provide pdfium library 
    * Write PdfRendererCompat java class wrapper that similar to android builtin PdfRenderer
-    
+  #### v0.1.0
+   * Fix issue on api under 19
