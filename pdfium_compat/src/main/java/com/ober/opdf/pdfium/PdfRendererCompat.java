@@ -1,4 +1,4 @@
-package com.ober.opd.pdfium;
+package com.ober.opdf.pdfium;
 
 
 import android.graphics.Bitmap;

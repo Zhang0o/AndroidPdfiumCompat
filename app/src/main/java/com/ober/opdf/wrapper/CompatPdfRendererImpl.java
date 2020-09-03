@@ -5,7 +5,7 @@ import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.os.ParcelFileDescriptor;
 
-import com.ober.opd.pdfium.PdfRendererCompat;
+import com.ober.opdf.pdfium.PdfRendererCompat;
 
 import java.io.IOException;
 

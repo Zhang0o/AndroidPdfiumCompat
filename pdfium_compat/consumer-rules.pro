@@ -1,1 +1,1 @@
--keep class com.ober.opd.pdfium.PdfRendererCompat {*;}
+-keep class com.ober.opdf.pdfium.PdfRendererCompat {*;}

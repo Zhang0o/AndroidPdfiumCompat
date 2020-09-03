@@ -4,21 +4,21 @@
 
 extern "C"
 JNIEXPORT jlong JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nCreate(JNIEnv *env, jclass clazz, jint fd) {
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nCreate(JNIEnv *env, jclass clazz, jint fd) {
     FPDF_DOCUMENT doc = PdfRendererCompat::create(env, fd);
     return (long) doc;
 }
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nClose(JNIEnv *env, jclass clazz, jlong document_ptr) {
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nClose(JNIEnv *env, jclass clazz, jlong document_ptr) {
     FPDF_DOCUMENT doc = (FPDF_DOCUMENT) document_ptr;
     PdfRendererCompat::close(env, doc);
 }
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nGetPageCount(JNIEnv *env, jclass clazz,
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nGetPageCount(JNIEnv *env, jclass clazz,
                                                          jlong document_ptr) {
     FPDF_DOCUMENT doc = (FPDF_DOCUMENT) document_ptr;
     return PdfRendererCompat::getPageCount(env, doc);
@@ -26,7 +26,7 @@ Java_com_ober_opd_pdfium_PdfRendererCompat_nGetPageCount(JNIEnv *env, jclass cla
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nScaleForPrinting(JNIEnv *env, jclass clazz,
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nScaleForPrinting(JNIEnv *env, jclass clazz,
                                                              jlong document_ptr) {
     FPDF_DOCUMENT doc = (FPDF_DOCUMENT) document_ptr;
     return PdfRendererCompat::scaleForPrinting(env, doc);
@@ -34,7 +34,7 @@ Java_com_ober_opd_pdfium_PdfRendererCompat_nScaleForPrinting(JNIEnv *env, jclass
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nRenderPage(JNIEnv *env, jclass clazz,
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nRenderPage(JNIEnv *env, jclass clazz,
                                                        jlong document_ptr, jlong page_ptr,
                                                        jobject dest,
                                                        jfloatArray clip_data,
@@ -55,7 +55,7 @@ Java_com_ober_opd_pdfium_PdfRendererCompat_nRenderPage(JNIEnv *env, jclass clazz
 
 extern "C"
 JNIEXPORT jlong JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nOpenPageAndGetSize(JNIEnv *env, jclass clazz,
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nOpenPageAndGetSize(JNIEnv *env, jclass clazz,
                                                                jlong document_ptr, jint page_index,
                                                                jfloatArray out_size) {
 
@@ -71,7 +71,7 @@ Java_com_ober_opd_pdfium_PdfRendererCompat_nOpenPageAndGetSize(JNIEnv *env, jcla
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ober_opd_pdfium_PdfRendererCompat_nativeClosePage(JNIEnv *env, jclass clazz,
+Java_com_ober_opdf_pdfium_PdfRendererCompat_nativeClosePage(JNIEnv *env, jclass clazz,
                                                            jlong page_ptr) {
     FPDF_PAGE page = (FPDF_PAGE) page_ptr;
     PdfRendererCompat::closePage(env, page);
