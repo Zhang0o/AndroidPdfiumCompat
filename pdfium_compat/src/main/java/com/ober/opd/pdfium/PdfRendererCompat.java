@@ -22,11 +22,11 @@ public class PdfRendererCompat {
 
     //pdfium library build with source code
     static {
-        System.loadLibrary("c++");
-        System.loadLibrary("icuuc");
-        System.loadLibrary("icui18n");
-        System.loadLibrary("chrome_zlib");
-        System.loadLibrary("pdfium");
+        System.loadLibrary("c++.cr");
+        System.loadLibrary("icuuc.cr");
+        System.loadLibrary("icui18n.cr");
+        System.loadLibrary("chrome_zlib.cr");
+        System.loadLibrary("pdfium.cr");
     }
 
     //native renderer library depend on pdfium

@@ -18,8 +18,8 @@ target_link_libraries(
         log
         jnigraphics
         android
-        c++
-        chrome_zlib
-        icui18n
-        icuuc
-        pdfium)
+        c++.cr
+        chrome_zlib.cr
+        icui18n.cr
+        icuuc.cr
+        pdfium.cr)
