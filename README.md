@@ -15,7 +15,7 @@ Compatible implementation for [ android.graphics.pdf.PdfRenderer ]( https://deve
     PdfRendererCompat pdfRenderer = new PdfRendererCompat(parcelFileDescriptor);
     //then pdfRenderer perform every function similar to android.graphics.pdf.PdfRenderer
   
-  Demo app show the simple usage of PdfRendererCompat and PdfRenderer
+  Demo app shows the simple usage of PdfRendererCompat and PdfRenderer
   
   <img src="https://github.com/Zhang0o/AndroidPdfiumCompat/blob/master/demo_screenshot.png" width="250"/>
   
